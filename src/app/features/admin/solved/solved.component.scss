@@ -19,6 +19,15 @@
         border-radius:5px;
         min-height:150px;
         width:100%;
+        .terrorist {
+          color: #B65358;
+        }
+        .criminal {
+          color: #D29E16;
+        }
+        .missingPerson {
+          color: #78CBC3;
+        }
       }
       .ch{
         margin-top:12px;
@@ -40,6 +49,10 @@
         border-radius:5px;
         min-height:312px;
         width:300px;
+        img {
+          margin-top: 25px;
+          margin-left: 5px;
+        }
       }
     }
   }

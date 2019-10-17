@@ -5,13 +5,50 @@
           <h5 class="title">Total Solved</h5>
           <div class="dFlex">
             <div class="flexChild dFlex vCenter hCenter">
-              30%
+              <div class="dFlex" style="flex-direction:column">
+                <circle-progress
+                [percent]="75"
+                [radius]="38"
+                [outerStrokeWidth]="2"
+                [innerStrokeWidth]="0"
+                [outerStrokeColor]="'#B65358'"
+                [animation]="true"
+                [animationDuration]="300"
+                [showSubtitle] = "false"
+              ></circle-progress>
+              <li class="terrorist">Terrorist</li>
+            </div>
+            </div>
+            
+            <div class="flexChild dFlex vCenter hCenter">
+                <div class="dFlex" style="flex-direction:column">
+                <circle-progress
+                [percent]="80"
+                [radius]="38"
+                [outerStrokeWidth]="2"
+                [innerStrokeWidth]="0"
+                [outerStrokeColor]="'#D29E16'"
+                [animation]="true"
+                [animationDuration]="300"
+                [showSubtitle] = "false"
+              ></circle-progress>
+              <li class="criminal">Criminal</li>
+              </div>
             </div>
             <div class="flexChild dFlex vCenter hCenter">
-                30%
-            </div>
-            <div class="flexChild dFlex vCenter hCenter">
-                30%
+                <div class="dFlex" style="flex-direction:column">
+                <circle-progress
+                [percent]="60"
+                [radius]="38"
+                [outerStrokeWidth]="2"
+                [innerStrokeWidth]="0"
+                [outerStrokeColor]="'#78CBC3'"
+                [animation]="true"
+                [animationDuration]="300"
+                [showSubtitle] = "false"
+              ></circle-progress> 
+              <li class="missingPerson">Missing Person</li>
+              </div>
             </div>
           </div>
       </div>
@@ -19,11 +56,13 @@
         <div class="outer">
           <div class="box">
               <h5 class="title">Urgency</h5>
+              <canvas id="barChart" height="90"></canvas>
           </div>
         </div>
         <div class="outer">
           <div class="box">
               <h5 class="title">Un-Solved</h5>
+              <canvas id="lineChart" height="90"></canvas>
           </div>
         </div>
       </div>
@@ -31,6 +70,7 @@
     <div class="gmap">
       <div class="box">
           <h5 class="title">Distribution by Type</h5>
+          <img src="assets/images/map.jpg">
       </div>
     </div>
   </div>
