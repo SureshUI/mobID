@@ -14,4 +14,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .flexInit{
     flex:initial;
   }
+  
+}
+.dFlex.vCenter{
+  align-items: center;
+}
+.dFlex.hCenter{
+  justify-content: center;
 }
